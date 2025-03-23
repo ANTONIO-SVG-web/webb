@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 3 - Formulario de Registro</title>
+    <link rel="stylesheet" href="practica3.css"> <!-- CSS específico para esta práctica -->
+</head>
+<body>
+    <!-- Botón de Regresar al Menú -->
+    <div class="regresar-menu">
+        <a href="index.html" class="boton-regresar">Regresar al Menú</a>
+    </div>
+
+    <!-- Formulario de Registro -->
+    <fieldset id="registrousuario">
+        <legend>Registro de Nuevo Usuario</legend>
+        <form>
+            <!-- Campo de Usuario -->
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" name="username" class="texto" placeholder="Escribe tu usuario" required>
+
+            <!-- Campo de Contraseña -->
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" class="texto" placeholder="Escribe tu contraseña" required>
+
+            <!-- Campo de Correo Electrónico -->
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" class="texto" placeholder="Escribe tu correo" required>
+
+            <!-- Campo de Nombres -->
+            <label for="nombre">Nombres:</label>
+            <input type="text" id="nombre" name="nombre" class="texto" placeholder="Escribe tus nombres" required>
+
+            <!-- Campo de Apellidos -->
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" class="texto" placeholder="Escribe tus apellidos" required>
+
+            <!-- Campo de Dirección -->
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" class="texto" placeholder="Escribe tu dirección" required>
+
+            <!-- Campo de Fecha de Nacimiento -->
+            <label for="fecha">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha" name="fecha" class="texto" required>
+
+            <!-- Campo de Comentarios -->
+            <label for="comentarios">Comentarios:</label>
+            <textarea id="comentarios" name="comentarios" class="areadetexto" placeholder="Escribe tus comentarios"></textarea>
+
+            <!-- Botón de Enviar -->
+            <input type="submit" name="enviar" class="botonenviar" value="Enviar">
+        </form>
+    </fieldset>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>José Antonio Grande Ramírez</p>
+    </footer>
+</body>
+</html>

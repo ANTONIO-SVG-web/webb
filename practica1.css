@@ -1,0 +1,104 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #000000, #333333);
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Botón de Regresar al Menú */
+.regresar-menu {
+    text-align: right;
+    padding: 10px;
+}
+
+.boton-regresar {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.boton-regresar:hover {
+    background-color: #0056b3;
+}
+
+/* Encabezado */
+header {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Menú */
+#menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+    overflow: hidden;
+}
+
+#menu li {
+    display: inline-block;
+}
+
+#menu li a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#menu li a:hover {
+    background-color: #555;
+}
+
+/* Contenido Principal */
+main {
+    padding: 20px;
+}
+
+#imagen {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#presenta {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#presenta h1 {
+    margin-top: 0;
+}
+
+/* Barra lateral */
+#right {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#right h2 {
+    margin-top: 0;
+}
+
+/* Pie de Página */
+#pia {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 1rem;
+}

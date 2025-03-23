@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 7 - Animaciones con Animate.css</title>
+    <!-- Enlace a Animate.css (usando CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Enlace al archivo CSS local -->
+    <link rel="stylesheet" href="practica7.css">
+</head>
+<body>
+    <!-- Botón "Regresar al Menú" -->
+    <div class="boton-regresar">
+        <button onclick="window.location.href='index.html'">Regresar al Menú</button>
+    </div>
+
+    <!-- Contenido de la Práctica 7 -->
+    <header class="portada">
+        <h1 class="animate__animated animate__bounce">Práctica 7 - Animaciones de Texto e Imágenes</h1>
+        <p class="animate__animated animate__fadeIn">
+            En esta práctica, se utilizan animaciones de texto e imágenes con la librería Animate.css.
+        </p>
+    </header>
+
+    <!-- Ejemplo de animación de texto -->
+    <section class="contenido">
+        <h2 class="animate__animated animate__rubberBand animate__delay-2s">Animación de Texto</h2>
+        <p class="animate__animated animate__fadeInLeft">
+            Este es un ejemplo de texto con animaciones. ¡Puedes usar diferentes efectos como <strong>bounce</strong>, <strong>fadeIn</strong>, <strong>rubberBand</strong>, y más!
+        </p>
+    </section>
+
+    <!-- Ejemplo de animación de imagen -->
+    <section class="contenido">
+        <h2 class="animate__animated animate__shakeX animate__delay-3s">Animación de Imagen</h2>
+        <div class="animate__animated animate__zoomIn animate__delay-4s">
+            <img src="I3.png" alt="Imagen animada" width="300">
+        </div>
+    </section>
+
+    <!-- Banner con el nombre -->
+    <footer>
+        <p>José Antonio Grande Ramírez</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,92 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #000000, #333333); /* Fondo degradado negro */
+    color: #fff; /* Texto en blanco */
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos el 100% de la altura de la ventana */
+}
+
+/* Botón "Regresar al Menú" */
+.boton-regresar {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.boton-regresar button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.boton-regresar button:hover {
+    background-color: #0056b3;
+}
+
+/* Portada */
+.portada {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.portada h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.portada p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Contenido */
+.contenido {
+    padding: 20px;
+    text-align: center;
+    flex: 1; /* Hace que el contenido ocupe el espacio restante */
+}
+
+.contenido h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Gráfico */
+#chart_wrap {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 900px;
+}
+
+#piechart {
+    width: 100%;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Pie de Página (footer no fijo) */
+footer {
+    background-color: #333; /* Fondo oscuro */
+    color: #fff; /* Letras blancas */
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1rem;
+    margin-top: auto; /* Coloca el footer al final del contenido */
+}

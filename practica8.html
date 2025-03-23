@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 8 - Multimedia en HTML5</title>
+    <!-- Enlace al archivo CSS local -->
+    <link rel="stylesheet" href="practica8.css">
+</head>
+<body>
+    <!-- Botón "Regresar al Menú" -->
+    <div class="boton-regresar">
+        <button onclick="window.location.href='index.html'">Regresar al Menú</button>
+    </div>
+
+    <!-- Contenido de la Práctica 8 -->
+    <header class="portada">
+        <h1>Práctica 8 - Multimedia en HTML5</h1>
+        <p>
+            En esta práctica, se integran elementos multimedia (audio y video) utilizando las etiquetas de HTML5.
+        </p>
+    </header>
+
+    <!-- Sección de Audio -->
+    <section class="contenido">
+        <h2>Reproductor de Audio</h2>
+        <p>
+            A continuación, se muestra un reproductor de audio con controles.
+        </p>
+        <audio controls>
+            <!-- Aquí se especifica el tipo de audio -->
+            <source src="a1.mp3" type="audio/mp3">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+    </section>
+
+    <!-- Sección de Video -->
+    <section class="contenido">
+        <h2>Reproductor de Video</h2>
+        <p>
+            A continuación, se muestra un reproductor de video con controles.
+        </p>
+        <video width="720" height="410" controls>
+            <!-- Aquí se especifica el tipo de video -->
+            <source src="v1.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+    </section>
+
+    <!-- Banner con el nombre (footer no fijo) -->
+    <footer>
+        <p>José Antonio Grande Ramírez</p>
+    </footer>
+</body>
+</html>

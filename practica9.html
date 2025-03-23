@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 9 - Manejo de Fechas con Moment.js</title>
+    <!-- Enlace al archivo CSS local -->
+    <link rel="stylesheet" href="practica9.css">
+    <!-- Enlace a Moment.js mediante CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <!-- Enlace al locale en español (México) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es-mx.min.js"></script>
+</head>
+<body>
+    <!-- Botón "Regresar al Menú" -->
+    <div class="boton-regresar">
+        <button onclick="window.location.href='index.html'">Regresar al Menú</button>
+    </div>
+
+    <!-- Contenido de la Práctica 9 -->
+    <header class="portada">
+        <h1>Práctica 9 - Manejo de Fechas con Moment.js</h1>
+        <p>
+            En esta práctica, se utiliza la librería Moment.js para manipular y mostrar fechas y horas en diferentes formatos.
+        </p>
+    </header>
+
+    <!-- Sección de Fechas y Horas -->
+    <section class="contenido">
+        <h2>Fecha y Hora Actual</h2>
+        <p>
+            A continuación, se muestra la fecha y hora actual en diferentes formatos:
+        </p>
+        <div id="fecha-hora">
+            <p><strong>Formato 1:</strong> <span id="fecha1"></span></p>
+            <p><strong>Formato 2:</strong> <span id="fecha2"></span></p>
+            <p><strong>Formato 3:</strong> <span id="fecha3"></span></p>
+        </div>
+    </section>
+
+    <!-- Banner con el nombre -->
+    <footer>
+        <p>José Antonio Grande Ramírez</p>
+    </footer>
+
+    <!-- Script para manejar las fechas con Moment.js -->
+    <script>
+        // Función para mostrar la fecha y hora en diferentes formatos
+        function mostrarFechas() {
+            // Configurar el locale en español (México)
+            moment.locale('es-mx');
+
+            // Obtener la fecha y hora actual
+            const ahora = moment();
+
+            // Mostrar la fecha y hora en diferentes formatos
+            document.getElementById('fecha1').textContent = ahora.format('LL'); // Fecha larga (ej: "21 de octubre de 2020")
+            document.getElementById('fecha2').textContent = ahora.format('LLLL'); // Fecha y hora larga (ej: "miércoles, 21 de octubre de 2020 1:13 PM")
+            document.getElementById('fecha3').textContent = ahora.format('LT'); // Hora en formato 12 horas (ej: "1:13 PM")
+        }
+
+        // Llamar a la función al cargar la página
+        window.onload = mostrarFechas;
+    </script>
+</body>
+</html>

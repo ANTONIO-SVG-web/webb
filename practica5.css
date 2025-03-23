@@ -1,0 +1,154 @@
+/* Estilos generales */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFA;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Botón de Regresar al Menú */
+.regresar-menu {
+    text-align: right;
+    padding: 10px;
+}
+
+.boton-regresar {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.boton-regresar:hover {
+    background-color: #0056b3;
+}
+
+/* Menú Vertical Multinivel */
+.contenedor {
+    background: #f4f5f5;
+    position: fixed;
+    height: 100%;
+    left: 0;
+    width: 200px;
+    top: 0;
+    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.2);
+    transition: left 0.5s ease;
+    z-index: 1000;
+}
+
+#menu_principal {
+    padding-top: 50px;
+}
+
+#menu_principal li {
+    height: 60px;
+    line-height: 60px;
+    position: relative;
+    width: 100%;
+}
+
+#menu_principal a, label {
+    color: #333;
+    display: block;
+    padding-left: 25px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+#menu_principal li:hover > a, #menu_principal li:hover > label {
+    color: white;
+    cursor: pointer;
+    background-color: purple;
+}
+
+#menu_principal ul {
+    list-style: none;
+    background: #CCCCCC;
+    display: none;
+}
+
+#menu_principal ul li {
+    margin: 0 0 5px 0;
+}
+
+#menu_principal ul li a {
+    padding-left: 50px;
+}
+
+.boton {
+    color: white;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    left: 96%;
+    top: 0;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background: gray;
+    transition: left 0.2s;
+    z-index: -1;
+}
+
+.boton:hover {
+    left: 100%;
+    cursor: pointer;
+}
+
+.invisible {
+    left: -200px;
+}
+
+.derecha {
+    float: right;
+    line-height: 60px;
+}
+
+.principales {
+    margin-right: 10px;
+}
+
+/* Estilos Responsive */
+@media only screen and (max-width: 560px), handheld and (orientation: landscape) {
+    #menu_principal li {
+        margin: auto;
+        height: auto;
+    }
+
+    #menu_principal {
+        padding-top: 20px;
+    }
+
+    #menu_principal > ul {
+        position: static;
+        height: auto;
+        box-shadow: none;
+        padding-left: 15px;
+        width: auto;
+    }
+
+    nav {
+        overflow-y: auto;
+        max-height: 100vh;
+        overflow-x: hidden;
+    }
+
+    .mif-expand-more {
+        display: inline;
+    }
+
+    ul li .mif-chevron-right {
+        display: none;
+    }
+
+    [id^="drop"]:checked + ul {
+        display: block;
+    }
+
+    nav ul li:hover > ul {
+        display: none;
+    }
+}

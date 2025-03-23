@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Web - Portada</title>
+    <link rel="stylesheet" href="JAGR.CSS"> <!-- Cambiado a JAGR.CSS -->
+</head>
+<body>
+    <!-- Combobox de Menú -->
+    <nav class="menu">
+        <select id="menu-combobox" onchange="navigateToPage()">
+            <option value="">Menú</option>
+            <option value="practica1.html">Práctica 1</option>
+            <option value="practica2.html">Práctica 2</option>
+            <option value="practica3.html">Práctica 3</option>
+            <option value="practica4.html">Práctica 4</option>
+            <option value="practica5.html">Práctica 5</option>
+            <option value="practica6.html">Práctica 6</option>
+            <option value="practica7.html">Práctica 7</option>
+            <option value="practica8.html">Práctica 8</option>
+            <option value="practica9.html">Práctica 9</option>
+            <option value="practica10.html">Práctica 10</option>
+            <option value="practica11.html">Práctica 11</option>
+        </select>
+    </nav>
+
+    <!-- Portada -->
+    <header class="portada">
+        <h1>Bienvenido a Mi Proyecto Web</h1>
+        <p>
+            Este es un proyecto que incluye una serie de prácticas diseñadas para mejorar tus habilidades en desarrollo web. 
+            Desde conceptos básicos hasta técnicas avanzadas, cada práctica te ayudará a dominar diferentes aspectos 
+            de la creación de páginas web. ¡Explora el menú para comenzar!
+        </p>
+        <!-- Imagen -->
+        <img src="I2.JPG" alt="Imagen de portada" class="portada-imagen">
+    </header>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>José Antonio Grande Ramírez</p>
+    </footer>
+
+    <!-- Script para manejar el combobox -->
+    <script>
+        function navigateToPage() {
+            const combobox = document.getElementById('menu-combobox');
+            const selectedPage = combobox.value;
+            if (selectedPage) {
+                window.location.href = selectedPage;
+            }
+        }
+    </script>
+</body>
+</html>

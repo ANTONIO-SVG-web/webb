@@ -1,0 +1,81 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #000000, #333333); /* Fondo degradado negro */
+    color: #fff; /* Texto en blanco */
+    line-height: 1.6;
+}
+
+/* Portada */
+.portada {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.portada h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.portada p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.portada-imagen {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Menú de Prácticas (Combobox) */
+.menu {
+    position: fixed; /* Fija el menú en la pantalla */
+    top: 20px;
+    right: 20px;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+#menu-combobox {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    appearance: none; /* Elimina el estilo predeterminado del combobox */
+    -webkit-appearance: none; /* Para navegadores basados en WebKit */
+    -moz-appearance: none; /* Para navegadores basados en Mozilla */
+}
+
+#menu-combobox:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para las opciones del combobox */
+#menu-combobox option {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Pie de Página */
+footer {
+    background-color: #333; /* Fondo oscuro */
+    color: #fff; /* Letras blancas */
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 1rem;
+}
